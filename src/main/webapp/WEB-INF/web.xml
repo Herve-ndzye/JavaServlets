@@ -7,9 +7,17 @@
     <servlet>
         <servlet-name>sum</servlet-name>
         <servlet-class>com.mavic.learningtomcat.SumServlet</servlet-class>
+        <init-param>
+            <param-name>admin_email</param-name>
+            <param-value>larimahoro@gmail.com</param-value>
+        </init-param>
     </servlet>
     <servlet-mapping>
         <servlet-name>sum</servlet-name>
         <url-pattern>/add</url-pattern>
     </servlet-mapping>
+    <context-param>
+        <param-name>app_name</param-name>
+        <param-value>calculator</param-value>
+    </context-param>
 </web-app>
